@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fly check</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+</head>
+<body>
+	<!-- onload="Init ()" -->
+	<form action="" method="post" name="test" id="form">
+		<h1>Registration form</h1>
+		<label>
+			<input type="email" name="email" placeholder="Email_password form" id="email">
+			<div class="invalid-input" id="email_inv"></div>
+		</label>
+		<br>
+		<label>
+			<input type="email" name="email" placeholder="Email_onchage" id="email1" onchange="checkName1(this.value)">
+			<div class="invalid-input" id="email1_inv"></div>
+		</label>
+		<br>
+		<label>
+			<input type="email" name="email" placeholder="Email_blur" id="email2">
+			<div class="invalid-input" id="email2_inv"></div>
+		</label>
+		<br>
+		<label>
+			<input type="email" name="email" placeholder="Email_keypress" id="email3">
+			<div class="invalid-input" id="email3_inv"></div>
+		</label>
+		<br>
+		<label>
+			<input type="password" name="password" placeholder="Password" id="password">
+			<div class="invalid-input" id="password_inv"></div>
+		</label>
+		<br>
+		<label>
+			<input type="password" name="confirmation" placeholder="Confirm password" id="confirmation">
+			<div class="invalid-input" id="confirmation_inv"></div>
+		</label>
+		<br>
+		<div>
+			<input type="button" onclick="validation()" name="submit" value="Register">
+		</div>
+	</form>
+    <script type="text/javascript" src='script.js'></script>
+</body>
+</html>
